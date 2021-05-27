@@ -4,15 +4,15 @@
 }
 
 #header #advisors #advMilitary #js_GlobalMenu_military {
-    background-image: url(skin/layout/advisors/general.png);
+    background-image: url(https://s45-en.ikariam.gameforge.com/skin/layout/advisors/general.png);
 }
 
 #header #advisors #advMilitary #js_GlobalMenu_military.normalactive {
-    background-image: url(skin/layout/advisors/general_active.png);
+    background-image: url(https://s45-en.ikariam.gameforge.com/skin/layout/advisors/general_active.png);
 }
 
 #header #advisors #advMilitary #js_GlobalMenu_military.custom-attack {
-    background-image: url(skin/layout/advisors/general_alert.png);
+    background-image: url(https://s45-en.ikariam.gameforge.com/skin/layout/advisors/general_alert.png);
 }
 
 #header #advisors #advMilitary #js_GlobalMenu_military.custom-slow-attack {

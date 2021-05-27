@@ -3,7 +3,7 @@
     importScript("slow-boat.js", "slow-boat.css");
 
     function importScript(scriptURL, styleURL) {
-        var rootURL = "https://raw.githubusercontent.com/nickzoum/ikariam-scripts/main/";
+        var rootURL = "https://ezapp-ikariam-cdn.herokuapp.com/";
         scriptURL = rootURL + "scripts/" + scriptURL;
         styleURL = rootURL + "styles/" + styleURL;
         var cssLink = document.createElement("link");
