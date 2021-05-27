@@ -12,7 +12,7 @@
     button.id = "finder-button";
     button.addEventListener("click", function () {
         var text = getPoints();
-        if (text) copyText();
+        if (text) copyText(text);
         else alert("Open fortress first");
     });
 
