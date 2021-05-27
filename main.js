@@ -10,6 +10,8 @@ app.get("/", function (request, response) {
 
 var port = process.env.PORT || 3000;
 
+console.log("VERSION 2");
+
 app.listen(port, function () {
     console.log("Server is running, port: " + port);
 });
