@@ -1,16 +1,18 @@
 {
-  "name": "ikariam",
-  "version": "1.0.0",
-  "description": "",
-  "main": "auto-click.js",
-  "scripts": {
-    "start": "node main.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@types/jquery": "^3.5.5",
-    "express": "^4.17.1"
-  }
+    "name": "ikariam",
+    "version": "1.0.0",
+    "description": "",
+    "main": "auto-click.js",
+    "scripts": {
+        "build": "ng build",
+        "heroku-postbuild": "ng build --prod",
+        "start": "node main.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/jquery": "^3.5.5",
+        "express": "^4.17.1"
+    }
 }
