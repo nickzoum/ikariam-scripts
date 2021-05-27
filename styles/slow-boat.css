@@ -1,0 +1,33 @@
+#header #advisors #advMilitary {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#header #advisors #advMilitary #js_GlobalMenu_military {
+    background-image: url(skin/layout/advisors/general.png);
+}
+
+#header #advisors #advMilitary #js_GlobalMenu_military.normalactive {
+    background-image: url(skin/layout/advisors/general_active.png);
+}
+
+#header #advisors #advMilitary #js_GlobalMenu_military.custom-attack {
+    background-image: url(skin/layout/advisors/general_alert.png);
+}
+
+#header #advisors #advMilitary #js_GlobalMenu_military.custom-slow-attack {
+    box-shadow: inset 0 0 5px 5px rgb(0, 216, 255, 0.87);
+    border-radius: 10px;
+}
+
+#header #advisors #advMilitary #js_GlobalMenu_military.custom-slow-attack::before {
+    transform: rotate(-45deg);
+    position: absolute;
+    background: rgb(0, 216, 255, 0.87);
+    display: block;
+    height: 100%;
+    content: "";
+    width: 100%;
+    top: -70%;
+    left: 60%;
+}
