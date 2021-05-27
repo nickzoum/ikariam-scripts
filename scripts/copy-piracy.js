@@ -1,10 +1,19 @@
 (function CopyPiracyIIFE() {
 
+    var buttonList = document.querySelector("#custom-button-list");
+    if (!buttonList) {
+        buttonList = document.createElement("div");
+        buttonList.id = "custom-button-list";
+        document.body.appendChild(buttonList);
+    }
     var button = document.createElement("button");
-    document.body.appendChild(button);
+    button.className = "custom-button";
+    buttonList.appendChild(button);
     button.id = "finder-button";
     button.addEventListener("click", function () {
-        copyText(getPoints());
+        var text = getPoints();
+        if (text) copyText();
+        else alert("Open fortress first");
     });
 
     function getPoints() {

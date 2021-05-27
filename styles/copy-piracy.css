@@ -1,0 +1,7 @@
+#finder-button {
+    right: 125px;
+}
+
+#finder-button::before {
+    content: "Copy";
+}

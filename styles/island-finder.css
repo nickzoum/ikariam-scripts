@@ -1,0 +1,21 @@
+#island-finder {
+	position: fixed;
+	left: 20vw;
+	right: 20vw;
+	top: 15vh;
+	bottom: 15vh;
+	background: #e1c796;
+	border-radius: 8px;
+	border: 1px solid black;
+	z-index: 999999;
+}
+
+#island-finder>iframe {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	top: 10px;
+	bottom: 20px;
+	width: calc(100% - 20px);
+	height: calc(100% - 30px);
+}
