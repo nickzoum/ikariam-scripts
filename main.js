@@ -11,6 +11,8 @@ app.get("/", function (request, response) {
 console.log(process.env.PORT);
 console.log(process.env.port);
 
-app.listen(process.env.PORT || 3000, function () {
-    console.log("Server is running");
+var port = process.env.PORT;
+
+app.listen(port, function () {
+    console.log("Server is running port: " + port);
 });
