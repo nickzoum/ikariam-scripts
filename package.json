@@ -4,9 +4,9 @@
     "description": "",
     "main": "auto-click.js",
     "scripts": {
-        "start": "webpack-dev-server --mode development --hot --open --port $PORT",
+        "start": "node main.js --mode development --hot --open --port $PORT",
         "build": "npm i -dev && webpack --mode production",
-        "heroku-postbuild": "node main.js"
+        "heroku-postbuild": "npm build"
     },
     "keywords": [],
     "author": "",
