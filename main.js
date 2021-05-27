@@ -1,6 +1,6 @@
 var express = require("express");
 var app = express();
-var port = process.env.port;
+var port = process.env.PORT;
 
 app.use(express.static("scripts"));
 app.use(express.static("styles"));
