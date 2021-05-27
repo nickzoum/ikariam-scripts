@@ -1,14 +1,14 @@
-const express = require("express");
-const app = express();
-const port = 80;
+var express = require("express");
+var app = express();
+var port = process.env.port;
 
-app.get("/", (request, response) => {
-    res.send("Test Home Page");
+app.get("/", function (request, response) {
+    response.send("Test Home Page");
 });
 
 app.use(express.static("scripts"));
 app.use(express.static("styles"));
 
-app.listen(port, () => {
+app.listen(port, function () {
     console.log("Server is running");
 });
