@@ -1,0 +1,24 @@
+#toggle-ship {
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.175s ease-in-out;
+    border: 2px solid rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+    right: 75px;
+}
+
+#toggle-ship.active {
+    border: 2px solid rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+}
+
+#toggle-ship:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+#toggle-ship.active:hover {
+    background-color: rgba(0, 255, 0, 1);
+}
+
+#toggle-ship::before {
+    content: "Ships";
+}
