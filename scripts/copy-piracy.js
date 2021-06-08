@@ -20,9 +20,9 @@
                 list = list.filter(function (item) {
                     return item.cityId !== bgViewData.currentCityId;
                 }).map(function (item) {
-                    return item.name + ": " + item.capturePoints + " " + location.origin + "/?view=cityDetails&isMission=1&destinationCityId=" + item.cityId + "";
+                    return "`" +item.name + ": " + item.capturePoints + "` " + location.origin + "/?view=cityDetails&isMission=1&destinationCityId=" + item.cityId + "";
                 }).join("\n");
-                resolve("```\n" + list + "\n```");
+                resolve(list);
             }).catch(function (err) { reject(err); });
         });
     }
