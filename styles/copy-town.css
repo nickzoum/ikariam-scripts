@@ -1,11 +1,17 @@
 #js_selectedCityActionCopy {
+    cursor: pointer;
+}
+
+#js_selectedCityActionCopy>a {
     position: relative;
 }
 
-#js_selectedCityActionCopy::before {
+#js_selectedCityActionCopy>a::before {
     border: 5px double rgb(133, 95, 41);
+    text-align: center;
+    padding-top: 4px;
     display: block;
     content: "Copy";
-    height: 43px;
-    width: 63px;
+    height: 34px;
+    width: 50px;
 }

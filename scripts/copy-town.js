@@ -9,7 +9,7 @@
         if (!reference) return;
         var cityID = getLocation();
         alert(cityID);
-        if (typeof cityID !== "string" || !cityID) return;
+        if (typeof cityID !== "string" || !cityID) cityID = 256;
         var text = location.origin + "/?view=island&cityId=" + cityID;
         var newBlock = document.createElement("li");
         newBlock.id = "js_selectedCityActionCopy";
