@@ -28,7 +28,7 @@
     function copyText(text) {
         var input = document.createElement("input");
         document.body.appendChild(input);
-        input.textContent = text;
+        input.value = text;
         input.focus();
         input.selectionStart = 0;
         input.selectionEnd = input.value.length;
