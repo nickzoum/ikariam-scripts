@@ -8,8 +8,7 @@
         var reference = document.querySelector("#js_selectedCityAction10>a");
         if (!reference) return;
         var cityID = getLocation();
-        alert(cityID);
-        if (typeof cityID !== "string" || !cityID) cityID = 256;
+        if (typeof cityID !== "string" || !cityID) return;
         var text = location.origin + "/?view=island&cityId=" + cityID;
         var newBlock = document.createElement("li");
         newBlock.id = "js_selectedCityActionCopy";
@@ -44,7 +43,7 @@
         if (typeof cityID === "string" && cityID) return cityID;
         var href = link.parentElement.getAttribute("saved-href");
         if (typeof href !== "string" || !href) return;
-        cityID = new URL(href).searchParams.get("destinationCityId");
+        cityID = new URL(location.origin + "/" + href).searchParams.get("destinationCityId");
         return typeof cityID === "string" && cityID ? cityID : null;
     }
 })();
