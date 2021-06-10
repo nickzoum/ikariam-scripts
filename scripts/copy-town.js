@@ -14,7 +14,7 @@
         newBlock.id = "js_selectedCityActionCopy";
         newBlock.title = "Copy Link";
         var link = document.createElement("a");
-        link.href = "about:blank";
+        link.href = text;
         link.addEventListener("click", function (event) {
             event.preventDefault();
             copyText(text);
