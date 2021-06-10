@@ -41,6 +41,10 @@
         var link = document.querySelector(".cityLocation.city.selected>.link_img");
         if (!(link instanceof HTMLAnchorElement) || typeof link.href !== "string") return;
         var cityID = new URL(link.href).searchParams.get("cityId");
-        return typeof cityID === "string" ? cityID : null;
+        if (typeof cityID === "string" && cityID) return cityID;
+        var href = link.parentElement.getAttribute("saved-href");
+        if (typeof href !== "string" || !href) return;
+        cityID = new URL(href).searchParams.get("destinationCityId");
+        return typeof cityID === "string" && cityID ? cityID : null;
     }
 })();
