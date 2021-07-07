@@ -1,0 +1,9 @@
+.fleetAction.foreignBlocker[title$="[DARK]"],
+.fleetAction.foreignBlocker[title$="[ASN]"] {
+    background-image: url(skin/img/island/schiff_green.png) !important;
+}
+
+.occupied.foreignOccupier[title$="[DARK]"],
+.occupied.foreignOccupier[title$="[ASN]"] {
+    background-image: url(skin/img/island/soldat_green.png) !important;
+}
