@@ -1,6 +1,6 @@
 (function ColorsIIFE() {
 
-    var allies = ["DARK", "ASN"], regex = /(DARK|ASN)$/;
+    var allies = ["DARK", "ASN"], regex = /\[(DARK|ASN)\]$/;
 
     setInterval(updateBlocks, 250);
 
