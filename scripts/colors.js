@@ -11,7 +11,9 @@
         [...citiDoms].map(function (cityDom, index) {
             var cityInfo = cities[index] || {};
             cityDom.classList.add("recolored");
-            if (allies.includes(cityInfo.ownerAllyTag)) cityDom.classList.add("ally");
+            if (!allies.includes(cityInfo.ownerAllyTag)) return;
+            cityDom.classList.add("ally");
+            cityDom.classList.add("ally-recolor");
         });
         var fleets = document.querySelectorAll(".fleetAction.foreignBlocker:not(.recolored)");
         var occupied = document.querySelectorAll(".occupied.foreignOccupier:not(.recolored)");
@@ -20,12 +22,14 @@
             if (!regex.test(dom.title)) return;
             dom.classList.remove("foreignBlocker");
             dom.classList.add("allyBlocker");
+            dom.classList.add("ally-recolor");
         });
         [...occupied].forEach(function (dom) {
             dom.classList.add("recolored");
             if (!regex.test(dom.title)) return;
             dom.classList.remove("foreignOccupier");
             dom.classList.add("allyOccupier");
+            dom.classList.add("ally-recolor");
         });
     }
 })();
